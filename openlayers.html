@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Map Render</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.6.0/ol.css">
+  <style>
+    html, body, #map { height: 100%; margin: 0; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script src="https://cdn.jsdelivr.net/npm/ol@v10.6.0/dist/ol.js"></script>
+  <script>
+    const map = new ol.Map({
+    target: 'map',  // 指定地图容器的 ID
+    layers: [
+        new ol.layer.Tile({
+            source: new ol.source.OSM(),  // 使用 OpenStreetMap 图层
+            title: 'OSM Layer'  // 为 OSM 图层命名
+        })
+    ],
+    view: new ol.View({
+        center: ol.proj.fromLonLat([114.3535, 30.5459]),  // 武汉大学坐标（转换为地图坐标系）
+        zoom: 15,  // 设置缩放级别为 15
+        resolutions: [256, 128, 64, 32, 16, 8, 4, 2, 1]
+    })
+});
+    window.getMapInstance = () => map;
+  </script>
+</body>
+</html>
