@@ -9,7 +9,7 @@ The dataset can be viewed [here](https://huggingface.co/datasets/lzq677/GeoJSEva
 ## Citation
 
 ```
-@article{XiYanSQL,
+@article{GeoJSEval,
       title={GeoJSEval: An Automated Evaluation Framework for Large Language Models on JavaScript-Based Geospatial Computation and Visualization Code Generation}, 
       author={Guanyu Chen and Haoyue Jiao and Shuyang Hou and Ziqi Liu and Lutong Xie and Shaowen Wu and Huayi Wu and Xuefeng Guan and Zhipeng Gui},
       year={2025},
