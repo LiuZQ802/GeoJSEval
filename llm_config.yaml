@@ -21,7 +21,7 @@ all_models:
     base_url: "https://api.anthropic.com/v1/"
   - provider: "deepseek"
     model_name: ["deepseek-chat", "deepseek-reasoner"]
-    api_key: "sk-dc0cd7e381a74f419f62864f7e3726d8"
+    api_key: "your-api-key"
     base_url: "https://api.deepseek.com/v1"
   - provider: "google"
     model_name: ["gemini-2.0-pro-exp-02-05"]
