@@ -11,7 +11,7 @@ from call_language_model import call_language_model
 
 def extract_code_from_response_old(response_text: str) -> str:
     """
-    从模型响应中提取Python代码
+    从模型响应中提取JS代码
 
     参数:
     response_text (str): 模型的完整响应文本
@@ -56,7 +56,7 @@ def filter_docstring(code_lines) -> list:
 
 def extract_code_from_response(response_text: str) -> str:
     """
-    从模型响应中提取Python代码
+    从模型响应中提取JS代码
 
     参数:
     response_text (str): 模型的完整响应文本
@@ -142,7 +142,6 @@ def process_test_file(
             "Return ONLY the complete function code without any explanations or additional text. "
             "Do NOT repeat the given docstring, but keep the function declaration. "
             "If you want to declare more functions, you MUST declare them INSIDE the given function. "
-            "NEVER use `if __name__ == '__main__':` in your code. "
             "Warp the code with ```javascript and ```  to indicate the code block.\n\n"
             "Here is the function:\n\n"
             f"{test_content}"
