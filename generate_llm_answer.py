@@ -17,7 +17,7 @@ def extract_code_from_response_old(response_text: str) -> str:
     response_text (str): 模型的完整响应文本
 
     返回:
-    str: 提取出的Python代码，如果没有找到则返回原始响应
+    str: 提取出的javascript代码，如果没有找到则返回原始响应
     """
     # 尝试匹配三个反引号包围的代码块
     code_pattern = r"```javascript?(.*?)```"
